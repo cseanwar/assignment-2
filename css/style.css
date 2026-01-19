@@ -12,14 +12,11 @@
         font-optical-sizing: auto;
         font-style: normal;
     }
-    .navbar {
-        border-bottom: 1px solid #281f34;
-    }
+    /* navbar done by Tailwind css */
 
     /* Hero section */
     .hero-container {
         width: 100%;
-        /* height: 100%; */
         background-image: url(../assets/hero-bg.png);
         background-repeat: no-repeat;
         background-position: top center;
@@ -64,7 +61,7 @@
     .hero-container h1{
         color: #FFFFFF;
         font-style: Extra Bold;
-        font-size: 60px;
+        font-size: 3.8rem;
         font-weight: 800;
         line-height: 73px;
         text-align: center;
@@ -73,7 +70,7 @@
     .hero-container p {
         color: #FFFFFF;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 19px;
         text-align: center;
@@ -130,18 +127,18 @@
     .podcast-info h1 {
         color: #FFFFFF;
         font-style: Bold;
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 700;
-        line-height: 58px;
+        line-height: 3.7rem;
         text-align: center;
         margin-bottom: 16px;
     }
     .podcast-info p {
         width: 700px;
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 300;
-        line-height: 20px;
+        line-height: 1.2rem;
         text-align: center;
         line-height: 2;
         opacity: 0.8;
@@ -166,38 +163,40 @@
     .stats {
         color: #00FF88;
         font-style: Black;
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 900;
-        line-height: 58px;
+        line-height: 3.7rem;
         text-align: center;
     }
     .stat-cards p {
         margin-top: 16px;
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 1.2rem;
         text-align: center;
         text-transform: uppercase;
         opacity: 0.8;
         
     }
+    /* Why Choose TechWave section done by Tailwind css */
 
+    /* Media Query */
     @media screen and (max-width: 576px) {
         .podcast-container {
             padding-top: 50px;
             margin-top: -50px;
         }
         .podcast-info h1{
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: 700;
-            line-height: 39px;
+            line-height: 2.4;
         }
         .podcast-info p {
             max-width: 400px;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 1.2rem;
         }
         .line {
             width: 440px;
@@ -210,7 +209,6 @@
             max-width: 476px;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
         }
     }
 }
