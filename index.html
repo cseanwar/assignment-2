@@ -12,8 +12,9 @@
     <nav>
         <header class="bg-linear-to-r from-[#12002b] via-[#1b003a] to-[#12002b] border-b border-solid border-[#281f34]">
             <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <div class="text-3xl font-black">
-                    <span class="text-white">Tech</span><span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
+                <div class="text-3xl md:text-5xl font-black">
+                    <span class="text-white">Tech</span>
+                    <span class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
                 </div>
                 <nav class="hidden md:flex space-x-8 text-[#FFFFFF]">
                     <a href="#" class="hover:text-gray-300 transition">About</a>
@@ -26,26 +27,31 @@
             </div>
         </header>
         <section class="hero-container">
-            <div class="microphone">
-                <div class="mic box-1">
-                    <img src="assets/microphone.png" alt="">
+                <div class="microphone">
+                    <input type="checkbox" id="mic-toggle" class="hidden-checkbox">
+
+                    <label for="mic-toggle" class="mic-container">
+                        <div class="mic box-1">
+                            <img src="assets/microphone.png" alt="Microphone">
+                        </div>
+                        <div class="bg-mic box-2">
+                            <img src="assets/hero-circle.png" alt="">
+                        </div>
+                        <span class="badge">NEW</span>
+                    </label>
+                    <!-- <audio src="assets/jazz-effect-269183.mp3">Jazz Music</audio> -->
                 </div>
-                <div class="bg-mic box-2">
-                    <img src="assets/hero-circle.png" alt="">
+                <h1>TechWave</h1>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="btn-group">
+                    <div class="btn btn-primary">
+                        <button><span class="spotify"><i class="fa-brands fa-spotify"></i></span>Listen on Spotify</button>
+                    </div>
+                    <div class="btn btn-secondary">
+                        <button><span class="message"><i class="fa-regular fa-envelope"></i></span>Subscribe</button>
+                    </div>
                 </div>
-                <span class="badge">NEW</span>
-            </div>
-            <h1>TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <div class="btn-group">
-                <div class="btn btn-primary">
-                    <button><span class="spotify"><i class="fa-brands fa-spotify"></i></span>Listen on Spotify</button>
-                </div>
-                <div class="btn btn-secondary">
-                    <button><span class="message"><i class="fa-regular fa-envelope"></i></span>Subscribe</button>
-                </div>
-            </div>
-        </section>
+            </section>
     </nav>
     
     <main>
@@ -84,7 +90,7 @@
         </section>
 
         <section class="bg-[#230E3D] py-20 md:py-[120px] px-6 md:px-[200px]">
-            <h2 class="text-3xl md:text-5xl font-bold text-[#FFFFFF] text-center mb-8">Why Choose TechWave</h2>
+            <h2 class="text-3xl md:text-5xl font-bold text-[#FFFFFF] text-center mb-20">Why Choose TechWave</h2>
             
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-7">
                 <div class="md:row-span-2 bg-[#35116566] p-8 md:p-10 rounded-[40px]">
@@ -195,6 +201,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer-container">
         <div class="logo">
             <h1><span class="white">Tech</span><span class="linear">Wave</span></h1>
